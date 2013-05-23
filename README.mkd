@@ -1,5 +1,5 @@
-Solarized Colorscheme for Brackets (a.k.a. Adobe Edge Code)
-========================================================
+Solarized Colorscheme for Brackets (a.k.a. Edge Code)
+======================================================
 
 Developed by Ethan Schoonover <es@ethanschoonover.com>
 Adapted to Brackets (a.k.a. Adobe Edge Code) with love by Alper Buluç <hello@alperbuluc.com>.
@@ -20,7 +20,7 @@ Screenshots
 Downloads
 ---------
 
-If you have come across this colorscheme via the [Brackets-only repository on github][brackets-solarized-github], see the link above to the Solarized homepage or
+If you have come across this colorscheme via the [Brackets-only repository on github][brackets-color-theme-solarized-github], see the link above to the Solarized homepage or
 visit the [github repository for Solarized][solarized-github].
 
 [solarized]: http://ethanschoonover.com/solarized
