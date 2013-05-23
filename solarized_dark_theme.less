@@ -1,0 +1,153 @@
+
+// Copyright (c) 2012 Adobe Systems Incorporated. All rights reserved.
+//  
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the "Software"), 
+// to deal in the Software without restriction, including without limitation 
+// the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+// and/or sell copies of the Software, and to permit persons to whom the 
+// Software is furnished to do so, subject to the following conditions:
+//  
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//  
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+// DEALINGS IN THE SOFTWARE.
+
+
+/*
+ * Brackets Solarized Theme
+ *
+ * Solarized is a color palette created by Ethan Schoonover. It is designed
+ * to be used in terminal and GUI applications. Brackets solarized theme is using colors
+ * specified in Solarized color palette docs. Before making any modification please 
+ * review Solarized developer notes available at http://ethanschoonover.com/solarized.
+ *
+ */
+ 
+
+/* Overall Colors */
+
+/* 
+ * Background colors are ordered from least "intense" to most "intense"
+ * So, if the background is light, then @background-color-3 should be
+ * lightest, -2 should be darker, and -1 should be darker still.
+ *
+ * The opposite is true for a dark background -- background-color-3 should be
+ * the darkest, -2 should be lighter, and -1 should be lighter still.
+ */
+
+
+
+@background-color-1: darken(@bc-white, @bc-color-step-size*2); // Keep Brackets default 
+@background-color-2: #073642;               //  Base 02
+@background-color-3: #002b36;               //  Base 03
+
+/*
+ * @content-color-stronger should be should be further away from the
+ * background color than @content-color (i.e. more contrasty).
+ *
+ * @content-color-weaker should be closer to the background color
+ * than @content-color (i.e. less contrasty).
+ */
+
+@content-color: #839496;                    //  Base 0
+@content-color-stronger: #93a1a1;           //  Base 1
+@content-color-weaker: #657b83;             //  Base 00
+
+/* Code Styling */
+
+/* code accent colors                       Solarized color name */
+@accent-keyword: #268bd2;                   //  blue
+@accent-atom: #2aa198;                      //  cyna
+@accent-number: #2aa198;                    //  cyan
+@accent-def: #859900;                       //  green
+@accent-variable: #b58900;                  //  yellow
+@accent-variable-2: #859900;                //  green
+@accent-variable-3: #b58900;                //  yellow
+@accent-property: #b58900;                  //  yellow
+@accent-operator: #2aa198;                  //  cyan
+@accent-comment: #657b83;                   //  Base 0
+@accent-string: #2aa198;                    //  cyan
+@accent-string-2: #2aa198;                  //  cyan
+@accent-meta: #586e75;                      //  violet
+@accent-error: #dc322f;                     //  red               
+@accent-qualifier: #859900;                 //  green
+@accent-builtin: #859900;                   //  green
+@accent-bracket: #839496;                   //  Base 0
+@accent-tag: #268bd2;                       //  blue
+@accent-attribute: #657b83 ;                //  Base 0
+@accent-header: #d33682;                    //  magenta
+@accent-quote: #839496;                     //  Base 0
+@accent-hr: #b58900;                        //  yellow
+@accent-link: #6c71c4;                      //  violet
+@accent-rangeinfo: #d33682;                 //  magenta
+@accent-minus: #cb4b16;                     //  orange
+@accent-plus: #859900;                      //  green
+
+/* inline editor colors */
+@inline-background-color-1: #073642;        // Base 02
+@inline-background-color-2: #002b36;        // Base 03
+@inline-background-color-3: #d0d5d5;        // Brackets Default
+
+@inline-color-1: #268bd2;                   // blue
+@inline-color-2: #268bd2;                   // blue
+@inline-color-3: #073642;                   // Base 02
+
+/* sidebar/toolbar colors */
+@project-panel-base-color: #3C3F41;         //Brackets Default
+@project-panel-text-1: #ffffff;             //Brackets Default
+@project-panel-text-2: #8e9a9d;             //Brackets Default
+@main-toolbar-background-color: #5D5F60;    //Brackets Default
+
+/* Selection colors */
+@selection-color-focused: #93a1a1;          //  Base 02
+@selection-color-unfocused: #93a1a1;        //  Base 02
+
+/* background color of the line that has the cursor */
+@activeline-bgcolor: #073642;               // Base  02       
+
+/* Code font formatting
+ *
+ * NOTE (JRB): In order to get the web font to load early enough, we have a div called "dummy-text" that
+ * is styled with .code-font().
+ *
+ * The platform-specific selector gets added to the body tag *before* document ready time.
+ * We rely on this behavior to load platform-specific web fonts early.
+ */
+.code-font() {
+    color: @content-color;
+    // line-height must be specified in px not em because the code font and line number font sizes are different.
+    // Sizing via em will cause the code and line numbers to misalign
+    line-height: 15px;
+    font-size: 11px;
+    font-family: 'SourceCodePro', "ＭＳ ゴシック", "MS Gothic", monospace;
+}
+
+.code-font-win() {
+    .code-font();
+}
+
+.code-font-mac() {
+    .code-font();
+    /* Use the Medium weight on the Mac to counterbalance the grayscale antialiasing. */
+    font-family: 'SourceCodePro-Medium', "ＭＳ ゴシック", "MS Gothic", monospace;
+}
+
+.code-cursor() {
+    // to make a block cursor, use something like this:
+    // background-color: fadeout(@blue, 50%);
+    // border: none !important;
+
+    // to make an I-cursor, use something like this:
+    border-left: 1px solid black !important;
+
+}
+
+/* Variables and Mixins for non-code UI elements that can be styled */
+
