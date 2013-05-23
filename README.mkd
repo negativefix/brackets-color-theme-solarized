@@ -1,8 +1,8 @@
-Solarized Colorscheme for Brackets (aka Adobe Edge Code)
+Solarized Colorscheme for Brackets (a.k.a. Adobe Edge Code)
 ========================================================
 
 Developed by Ethan Schoonover <es@ethanschoonover.com>
-Adapted to Brackets (aka Adobe Edge Code) with love by Alper Buluç <hello@alperbuluc.com>.
+Adapted to Brackets (a.k.a. Adobe Edge Code) with love by Alper Buluç <hello@alperbuluc.com>.
 
 Visit Solarized Homepage
 ------------------------
@@ -30,9 +30,11 @@ visit the [github repository for Solarized][solarized-github].
 
 Installation
 ------------
-1 . Put downloaded file into 'www/styles' directory under your Brackets installation directory.
-2 . Open 'brackets_shared.less' in your styles directory.
-3 . Replace `brackets_theme_default.less` on line 56 with the version of Brackets Solarized Theme you want to use (e.g 'solarized_dark_theme.less').
+1. Put downloaded file into `www/styles` directory under your Brackets installation directory.
+
+2. Open 'brackets_shared.less' in your styles directory.
+
+3. Replace `brackets_theme_default.less` on line 56 with the version of Brackets Solarized Theme you want to use (e.g `solarized_dark_theme.less`).
 
 
 
