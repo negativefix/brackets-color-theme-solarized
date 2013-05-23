@@ -32,7 +32,7 @@ Installation
 ------------
 1. Put downloaded files into `www/styles` directory under your Brackets installation directory.
 
-2. Open 'brackets_shared.less' in your styles directory.
+2. Open `brackets_shared.less` in your `styles` directory.
 
 3. Replace `brackets_theme_default.less` on line 56 with the version of Brackets Solarized Theme you want to use (e.g `solarized_dark_theme.less`).
 
