@@ -30,7 +30,7 @@ visit the [github repository for Solarized][solarized-github].
 
 Installation
 ------------
-1. Put downloaded file into `www/styles` directory under your Brackets installation directory.
+1. Put downloaded files into `www/styles` directory under your Brackets installation directory.
 
 2. Open 'brackets_shared.less' in your styles directory.
 
