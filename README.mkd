@@ -2,7 +2,7 @@ Solarized Colorscheme for Brackets (a.k.a. Edge Code)
 ======================================================
 
 Developed by Ethan Schoonover <es@ethanschoonover.com>
-Adapted to Brackets (a.k.a. Adobe Edge Code) with love by Alper Buluç <hello@alperbuluc.com>.
+Adapted to Brackets (a.k.a. Edge Code) with love by Alper Buluç <hello@alperbuluc.com>.
 
 Visit Solarized Homepage
 ------------------------
