@@ -61,7 +61,7 @@
 
 /* Code Styling */
 
-/* code accent colors                       Solarized color name */
+/* code accent colors                       solarized color name */
 @accent-keyword: #268bd2;                   //  blue
 @accent-atom: #2aa198;                      //  cyna
 @accent-number: #2aa198;                    //  cyan
@@ -80,7 +80,7 @@
 @accent-builtin: #859900;                   //  green
 @accent-bracket: #839496;                   //  Base 0
 @accent-tag: #268bd2;                       //  blue
-@accent-attribute: #657b83 ;                //  Base 0
+@accent-attribute: #657b83;					//  Base 0
 @accent-header: #d33682;                    //  magenta
 @accent-quote: #839496;                     //  Base 0
 @accent-hr: #b58900;                        //  yellow
@@ -88,9 +88,15 @@
 @accent-rangeinfo: #d33682;                 //  magenta
 @accent-minus: #cb4b16;                     //  orange
 @accent-plus: #859900;                      //  green
+@match-text: #002b36;						//  Base 3
+@cm-match-highlight: rgba(147, 161, 161, 0.70);     //  Base 1 A:70%
+@cm-current-match-highlight: #93a1a1;       //  Base 1
+
+/* code highlight */
+@matching-bracket: #dc322f;                 // red
 
 /* inline editor colors */
-@inline-background-color-1: #073642;        // Base 02
+@inline-background-color-1: #;        // Base 02
 @inline-background-color-2: #002b36;        // Base 03
 @inline-background-color-3: #d0d5d5;        // Brackets Default
 
@@ -100,9 +106,13 @@
 
 /* sidebar/toolbar colors */
 @project-panel-base-color: #3C3F41;         //Brackets Default
-@project-panel-text-1: #ffffff;             //Brackets Default
-@project-panel-text-2: #8e9a9d;             //Brackets Default
-@main-toolbar-background-color: #5D5F60;    //Brackets Default
+@project-panel-text-1: #eeeeee;
+@project-panel-text-2: #839496;             // Base 0
+@main-toolbar-background-color: #002b36;    // Base 03
+
+/* open working file highlight */
+@open-working-file-name-highlight: #268bd2;
+@open-working-file-ext-highlight: #839496;
 
 /* Selection colors */
 @selection-color-focused: #93a1a1;          //  Base 02
@@ -111,6 +121,13 @@
 /* background color of the line that has the cursor */
 @activeline-bgcolor: #073642;               // Base  02       
 
+/* custom scrollbar colors */
+@custom-scrollbar-thumb: rgba(147, 161, 161, 0.90);     //  Base 1 A:70%
+@custom-scrollbar-thumb-inactive: rgb(101, 123, 131);   //  Base 00
+
+/* live preview */
+@live-preview-sync-error-background: #cc0000;
+@live-preview-sync-error-color: @bc-white;
 /* Code font formatting
  *
  * NOTE (JRB): In order to get the web font to load early enough, we have a div called "dummy-text" that
@@ -144,7 +161,7 @@
     // border: none !important;
 
     // to make an I-cursor, use something like this:
-    border-left: 1px solid black !important;
+    border-left: 1px solid #fdf6e3 !important;   // Base 3
 
 }
 

@@ -88,6 +88,13 @@
 @accent-rangeinfo: #d33682;                 //  magenta
 @accent-minus: #cb4b16;                     //  orange
 @accent-plus: #859900;                      //  green
+@match-text: #fdf6e3;						//  Base 3
+
+@cm-match-highlight: rgba(88, 110, 117, 0.70);     //  Base 01 A:70%
+@cm-current-match-highlight: #586e75;       //  Base 1
+
+/* code highlight */
+@matching-bracket: #dc322f;                 // red
 
 /* inline editor colors */
 @inline-background-color-1: #fdf6e3;        // Base 3
@@ -104,12 +111,24 @@
 @project-panel-text-2: #8e9a9d;             //Brackets Default
 @main-toolbar-background-color: #5D5F60;    //Brackets Default
 
+/* open working file highlight */
+@open-working-file-name-highlight: #268bd2;
+@open-working-file-ext-highlight: #839496;
+
 /* Selection colors */
 @selection-color-focused: #93a1a1;          //  Base 02
 @selection-color-unfocused: #93a1a1;        //  Base 02
 
 /* background color of the line that has the cursor */
-@activeline-bgcolor: #eee8d5;               // Base  02       
+@activeline-bgcolor: #eee8d5;               // Base  02  
+
+/* custom scrollbar colors */
+@custom-scrollbar-thumb: rgba(147, 161, 161, 0.90);     //  Base 1 A:70%
+@custom-scrollbar-thumb-inactive: rgb(101, 123, 131);   //  Base 00
+
+/* live preview */
+@live-preview-sync-error-background: #cc0000;
+@live-preview-sync-error-color: @bc-white;
 
 /* Code font formatting
  *
@@ -144,7 +163,7 @@
     // border: none !important;
 
     // to make an I-cursor, use something like this:
-    border-left: 1px solid black !important;
+    border-left: 1px solid #002b36 !important;    // Base 03
 
 }
 
