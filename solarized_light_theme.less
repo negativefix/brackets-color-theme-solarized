@@ -22,10 +22,11 @@
 
 /*
  * Brackets Solarized Theme
- *
+ * 
  * Solarized is a color palette created by Ethan Schoonover. It is designed
  * to be used in terminal and GUI applications. Before making any modification please 
  * review Solarized developer notes available at http://ethanschoonover.com/solarized.
+ *
  *
  */
 
@@ -44,8 +45,8 @@
 
 
 @background-color-1: darken(@bc-white, @bc-color-step-size*2); // Keep Brackets default 
-@background-color-2: #eee8d5;               //  Base 2
-@background-color-3: #fdf6e3;               //  Base 3
+@background-color-2: #eee8d5;                                   //  Base 2
+@background-color-3: #fdf6e3;                                   //  Base 3
 
 /*
  * @content-color-stronger should be should be further away from the
@@ -55,79 +56,78 @@
  * than @content-color (i.e. less contrasty).
  */
 
-@content-color: #657b83;                   //  Base 00
-@content-color-stronger: #586e75;          //  Base 01
-@content-color-weaker: #93a1a1;            //  Base 1 
+@content-color: #657b83;                                        //  Base 00
+@content-color-stronger: #586e75;                               //  Base 01
+@content-color-weaker: #93a1a1;                                 //  Base 1 
 
 /* Code Styling */
 
-/* code accent colors                       Solarized color name */
-@accent-keyword: #268bd2;                   //  blue
-@accent-atom: #2aa198;                      //  cyna
-@accent-number: #2aa198;                    //  cyan
-@accent-def: #859900;                       //  green
-@accent-variable: #b58900;                  //  yellow
-@accent-variable-2: #859900;                //  green
-@accent-variable-3: #b58900;                //  yellow
-@accent-property: #b58900;                  //  yellow
-@accent-operator: #2aa198;                  //  cyan
-@accent-comment: #93a1a1;                   //  Base 1
-@accent-string: #2aa198;                    //  cyan
-@accent-string-2: #2aa198;                  //  cyan
-@accent-meta: #586e75;                      //  violet
-@accent-error: #dc322f;                     //  red               
-@accent-qualifier: #859900;                 //  green
-@accent-builtin: #859900;                   //  green
-@accent-bracket: #839496;                   //  Base 0
-@accent-tag: #268bd2;                       //  blue
-@accent-attribute: #657b83 ;                //  Base 0
-@accent-header: #d33682;                    //  magenta
-@accent-quote: #839496;                     //  Base 0
-@accent-hr: #b58900;                        //  yellow
-@accent-link: #6c71c4;                      //  violet
-@accent-rangeinfo: #d33682;                 //  magenta
-@accent-minus: #cb4b16;                     //  orange
-@accent-plus: #859900;                      //  green
-@match-text: #fdf6e3;						//  Base 3
-
-@cm-match-highlight: rgba(88, 110, 117, 0.70);     //  Base 01 A:70%
-@cm-current-match-highlight: #586e75;       //  Base 1
+/* code accent colors                                           Solarized color name */
+@accent-keyword: #268bd2;                                       //  blue
+@accent-atom: #2aa198;                                          //  cyna
+@accent-number: #2aa198;                                        //  cyan
+@accent-def: #859900;                                           //  green
+@accent-variable: #b58900;                                      //  yellow
+@accent-variable-2: #859900;                                    //  green
+@accent-variable-3: #b58900;                                    //  yellow
+@accent-property: #b58900;                                      //  yellow
+@accent-operator: #2aa198;                                      //  cyan
+@accent-comment: #93a1a1;                                       //  Base 1
+@accent-string: #2aa198;                                        //  cyan
+@accent-string-2: #2aa198;                                      //  cyan
+@accent-meta: #586e75;                                          //  violet
+@accent-error: #dc322f;                                         //  red               
+@accent-qualifier: #859900;                                     //  green
+@accent-builtin: #859900;                                       //  green
+@accent-bracket: #839496;                                       //  Base 0
+@accent-tag: #268bd2;                                           //  blue
+@accent-attribute: #657b83 ;                                    //  Base 0
+@accent-header: #d33682;                                        //  magenta
+@accent-quote: #839496;                                         //  Base 0
+@accent-hr: #b58900;                                            //  yellow
+@accent-link: #6c71c4;                                          //  violet
+@accent-rangeinfo: #d33682;                                     //  magenta
+@accent-minus: #cb4b16;                                         //  orange
+@accent-plus: #859900;                                          //  green
+@match-text: #fdf6e3;						                    //  Base 3
+@cm-match-highlight: rgba(131, 148, 150, 0,70);                 //  Base 1 A:70%
+@cm-current-match-highlight: #839496;                           //  Base 1
 
 /* code highlight */
-@matching-bracket: #dc322f;                 // red
+@matching-bracket: #eee8d5;                                     //  red
 
 /* inline editor colors */
-@inline-background-color-1: #fdf6e3;        // Base 3
-@inline-background-color-2: #eee8d5;        // Base 2
-@inline-background-color-3: #d0d5d5;        // Brackets Default
+@inline-background-color-1: #fdf6e3;                            //  Base 3
+@inline-background-color-2: #eee8d5;                            //  Base 2
+@inline-background-color-3: #d0d5d5;                            //  Brackets Default
 
-@inline-color-1: #268bd2;                   // blue
-@inline-color-2: #268bd2;                   // blue
-@inline-color-3: #073642;                   // Base 02
+@inline-color-1: #268bd2;                                       //  blue
+@inline-color-2: #268bd2;                                       //  blue
+@inline-color-3: #073642;                                       //  Base 02
 
 /* sidebar/toolbar colors */
-@project-panel-base-color: #3C3F41;         //Brackets Default
-@project-panel-text-1: #ffffff;             //Brackets Default
-@project-panel-text-2: #8e9a9d;             //Brackets Default
-@main-toolbar-background-color: #5D5F60;    //Brackets Default
+@project-panel-base-color: #3C3F41;                             //  Brackets Default
+@project-panel-text-1: #ffffff;                                 //  Brackets Default
+@project-panel-text-2: #8e9a9d;                                 //  Brackets Default
+@main-toolbar-background-color: #5D5F60;                        //  Brackets Default
 
 /* open working file highlight */
-@open-working-file-name-highlight: #268bd2;
+@open-working-file-name-highlight: #859900;
 @open-working-file-ext-highlight: #839496;
 
 /* Selection colors */
-@selection-color-focused: #93a1a1;          //  Base 02
-@selection-color-unfocused: #93a1a1;        //  Base 02
+@selection-color-focused: #eee8d5;                              //  Base 2
+@selection-color-unfocused: #eee8d5;                            //  Base 2
 
 /* background color of the line that has the cursor */
-@activeline-bgcolor: #eee8d5;               // Base  02  
+@activeline-bgcolor: rgba(238, 232, 213, 0.30);                 //  Base  02  
 
 /* custom scrollbar colors */
-@custom-scrollbar-thumb: rgba(147, 161, 161, 0.90);     //  Base 1 A:70%
-@custom-scrollbar-thumb-inactive: rgb(101, 123, 131);   //  Base 00
+@custom-scrollbar-thumb: rgba(147, 161, 161, 0.90);             //  Base 1 A:70%
+@custom-scrollbar-thumb-inactive: rgb(101, 123, 131);           //  Base 00
 
 /* live preview */
-@live-preview-sync-error-background: #cc0000;
+@live-preview-sync-error-background: #dc322f;                   //  red
 @live-preview-sync-error-color: @bc-white;
 
 /* Code font formatting
